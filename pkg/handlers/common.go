@@ -24,4 +24,5 @@ func InitHandlers() {
 		log.Fatalf("Error while parsing templates: %v", err)
 	}
 	templates = tmpls
+	initAvroDecoder()
 }
